@@ -1,0 +1,129 @@
+/* .app{
+  color: aqua;
+  background-color: antiquewhite;
+  text-align: center;
+  border: 2px;
+} */
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif
+ }
+ /* body{
+  border: black 1px solid;
+ } */
+ .title img{
+  height: 35px;
+  width: 35px;
+ }
+ .headerSection{
+  display: flex;
+  padding: 10px;
+  background-color: lightgreen;
+  cursor: pointer;
+ }
+.center ul li{
+ list-style: none;
+ display: inline-flex;
+ margin: 0 10px;
+}
+.imagesMen img{
+  height: 250px;
+  width: 170px;
+  display: inline;
+  justify-content:space-between;
+  margin: 0 25px;
+  cursor: pointer;
+}
+.imagesWoman img{
+  height: 300px;
+  width: 170px;
+  display: inline;
+  justify-content:space-between;
+  margin: 0 25px;
+  cursor: pointer;
+}
+.left{
+  flex: 2;
+  /* border: 1px solid gray; */
+}
+.center{
+  flex: 3;
+  /* border: 1px solid gray; */
+}
+/* .center ul li{
+  text-decoration: none;
+   color: inherit;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search{
+  flex: 3;
+  padding-top: 10px;
+}
+.right{
+  flex: 4;
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.bannerBox img{
+  width: 100%;
+  }
+  .collections{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+  }
+.menImages img{
+ height: 120px;
+ width: 120px;
+ display: inline;
+ justify-content: space-between;
+ padding: 0 10px;
+ cursor: pointer;
+}
+.womenImages img{
+  height: 120px;
+ width: 120px;
+ display: inline;
+ justify-content: space-between;
+ padding: 0 10px;
+ cursor: pointer;
+}
+.imagesKids img{
+  height: 230px;
+  width: 200px;
+  display: inline;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.cart img{
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+}
+/* .cartCount{
+  display: flex;
+  flex-direction: column;
+} */
+
+.formSignin{
+  display: block;
+
+ height: 100vh;
+ text-align: center;
+ padding: 80px;
+}
+
+
+
+
+
+
