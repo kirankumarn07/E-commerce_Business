@@ -17,7 +17,7 @@ const Signin = () => {
                     <label>Password:</label><br/>
                     <input type='text' name='password' value={formData.password} />
                 </div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '28px' }}>
+                <div style={{display:"flex",gap:"28px", justifyContent:"center"}}>
                     <button>Login</button>
                     <button>Cancel</button>
                 </div>

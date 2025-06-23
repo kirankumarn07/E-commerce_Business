@@ -55,7 +55,7 @@ const Signup = () => {
         })
     }
     return (
-        <form className='formSignup' onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto' }}>
+        <form className='' onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto' }}>
             <h2>Sign-Up</h2>
             <div style={{ marginBottom: '10px' }}>
                 <label>Name:</label><br />

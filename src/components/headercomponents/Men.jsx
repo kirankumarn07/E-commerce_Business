@@ -29,7 +29,12 @@ const Men = () => {
   const handleShirtClick = (shirt, index) => {
     setSelectedShirt({ ...shirt, index });
   };
-
+  const handleAddtocart=(shirt)=>{
+    const existingProduct=JSON.parse(localStorage.getItem('cartItems')) || [];
+    existingProduct.push(shirt);
+    localStorage.setItem('cartItems',JSON.stringify(existingProduct))
+    alert(`${shirt.name} add to cart`)
+  }
   const handleBuy = () => {
     alert(`Thank you for buying Shirt ${selectedShirt.index + 1} for ₹${selectedShirt.price}!`);
   };
@@ -56,6 +61,7 @@ const Men = () => {
             {selectedShirt?.index === index && (
               <div>
                 <p style={{ margin: '5px 0' }}>₹{shirt.price}</p>
+                <button style={{marginRight:'10px'}} onClick={()=>handleAddtocart(shirt)} >Add2Cart</button>
                 <button onClick={handleBuy}>Buy</button>
               </div>
             )}
