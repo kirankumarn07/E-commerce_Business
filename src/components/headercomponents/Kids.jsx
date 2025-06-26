@@ -44,7 +44,7 @@ const Kids = () => {
                     <div key={index} style={{ textAlign: 'center' }}>
                         <img src={kid.image} alt={`kid ${index + 1} `} onClick={() => handleKids(kid, index)}
                             style={{
-                                border: selectedKid?.index == index ? 'solid green 1px' : 'none'
+                                border: selectedKid?.index == index ? 'solid green 1px' : 'none', 
                             }} />
                         {selectedKid?.index === index && (
                             <div>

@@ -10,7 +10,7 @@ import Beauty from './components/headercomponents/Beauty';
 import Cart from './components/headercomponents/Cart';
 import Signup from './components/headercomponents/Signup';
 import Signin from './components/headercomponents/Signin';
-
+import Collections from './components/Collections';
 function App() {
   return (
     <Router>
@@ -24,6 +24,8 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signin' element={<Signin/>}/>
+        <Route path="/" element={<MainPage />} />
+
       </Routes>
     </Router>
   );

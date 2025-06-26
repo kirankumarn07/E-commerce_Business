@@ -98,7 +98,7 @@ a {
 }
 .imagesKids img{
   height: 230px;
-  width: 200px;
+  width: 220px;
   display: inline;
   justify-content: space-between;
   padding: 0 10px;
@@ -116,12 +116,16 @@ a {
 
 .formSignin{
   display: block;
-
  height: 100vh;
  text-align: center;
  padding: 80px;
 }
-
+.formSignup{
+  display: block;
+  height: 100vh;
+  text-align: center;
+  padding: 80px;
+}
 
 
 

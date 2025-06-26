@@ -9,10 +9,11 @@ import shirt7 from '../../assests/shirts/shirt7.jpg';
 import shirt8 from '../../assests/shirts/shirt8.jpg';
 import shirt9 from '../../assests/shirts/shirt9.jpg';
 import shirt10 from '../../assests/shirts/shirt10.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Men = () => {
   const [selectedShirt, setSelectedShirt] = useState(null);
-
+  const navigate=useNavigate();
   const shirts = [
     { image: shirt1, price: 650 },
     { image: shirt2, price: 700 },
@@ -30,13 +31,23 @@ const Men = () => {
     setSelectedShirt({ ...shirt, index });
   };
   const handleAddtocart=(shirt)=>{
+    const user=JSON.parse(localStorage.getItem('user'));
+    if(!user){
+      alert(`You have to login before the add to cart`)
+      navigate('/signin')
+    }
     const existingProduct=JSON.parse(localStorage.getItem('cartItems')) || [];
     existingProduct.push(shirt);
     localStorage.setItem('cartItems',JSON.stringify(existingProduct))
-    alert(`${shirt.name} add to cart`)
+    // alert(`${shirt.name} add to cart`)
   }
   const handleBuy = () => {
-    alert(`Thank you for buying Shirt ${selectedShirt.index + 1} for ₹${selectedShirt.price}!`);
+    const user=JSON.parse(localStorage.getItem('user'));
+    if(!user){
+      alert('you have to login before buy')
+      navigate('/signin')
+    }
+    // alert(`Thank you for buying Shirt ${selectedShirt.index + 1} for ₹${selectedShirt.price}!`);
   };
 
   return (

@@ -46,7 +46,7 @@ const Woman = () => {
                     <div key={index} style={{ textAlign: 'center' }}>
                         <img src={dress.image} alt={`Dress ${index + 1}`} onClick={() => handleShirtClick(dress, index)}
                             style={{
-                                border: selectedDress?.index == index ? 'solid darkblack 2px' : 'none',
+                                border: selectedDress?.index == index ? 'solid green 2px' : 'none',
                             }}
                         />
                         {selectedDress?.index === index && (
